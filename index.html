@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap styles a traves de referencia local -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+  <!-- custom styles -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Ejercicios Bootstrap</title>
+</head>
+
+<body>
+  <!-- mensaje de alerta -->
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>¡Bienvenido</strong> Esto solo es un sitio de práctia para Bootstrap. Siéntete libre de recorrerlo.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <!-- prueba número 1 -->
+  <nav class="navbar bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand">Navega Tranquilo</a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+  <header>
+    <div class="conteiner text-center py-5">
+      <h1 class="display-1">Pruebas de bootstrap</h1>
+    </div>
+  </header>
+  <div class="container text-center py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-3" style="background-color: rgb(98, 32, 239);">Hola Mundo</div>
+      <div class="col-sm-12 col-md-6 col-lg-3" style="background-color: rgb(236, 169, 14);">Hola Mundo</div>
+      <div class="col-sm-12 col-md-6 col-lg-3" style="background-color: purple;">Hola Mundo</div>
+      <div class="col-sm-12 col-md-6 col-lg-3" style="background-color: blueviolet;">Hola Mundo</div>
+    </div>
+  </div>
+
+  <!-- prueba número 2 -->
+
+  <div class="container text-center py-5">
+    <h1 class="display-1">Pruebas de bootstrap 2</h1>
+  </div>
+  <!-- barra navegación 2 -->
+  <nav class="navbar navbar-expand bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">BT 2</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Enlaces</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Págin 1</a></li>
+              <li><a class="dropdown-item" href="#">Página 2</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Página 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container text-center py-5">
+    <div class="row">
+
+      <figure class="figure col-sm-12 col-md-6 col-lg-4">
+        <div class="" style="background-color: rgb(0, 251, 255)">
+          <img src="./images/html.png" alt="log html" class="img-thumbnail">
+          <figcaption class="figure-caption">fig 1</figcaption>
+        </div>
+      </figure>
+
+      <figure class="figure col-sm-12 col-md-6 col-lg-4">
+        <div class="" style="background-color: rgb(0, 115, 255)">
+          <img src="./images/css.png" alt="log css" class="img-thumbnail">
+          <figcaption class="figure-caption">fig 2</figcaption>
+        </div>
+      </figure>
+
+      <figure class="figure col-sm-12 col-md-6 col-lg-4">
+        <div class="" style="background-color: lime">
+          <img src="./images/js.png" alt="log js" class="img-thumbnail">
+          <figcaption class="figure-caption">fig 3</figcaption>
+        </div>
+      </figure>
+    </div>
+  </div>
+  <!-- tabla -->
+  <div class="container">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">PERRO</th>
+          <th scope="col">GATO</th>
+          <th scope="col">GALLINA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">COMIDA</th>
+          <td>Hueso</td>
+          <td>Pescado</th>
+          <td>Maíz</th>
+        </tr>
+        <tr>
+          <th scope="row">PELAJE</th>
+          <td>Hueso</td>
+          <td>Pescado</th>
+          <td>Maíz</th>
+        </tr>
+        <tr>
+          <th scope="row">JUEGO</th>
+          <td>Hueso</td>
+          <td>Pescado</th>
+          <td>Maíz</th>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+  <div class="container fondos">
+    <form action="">
+      <div class="container-fluid row">
+        <div class="mb-3 col-sm-12 col-lg-6">
+          <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+          <input type="name" class="form-control" id="exampleFormControlInput1">
+          <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>      
+        <div class="mb-3 col-sm-12 col-lg-6">
+          <label for="exampleFormControlTextarea1" class="form-label">Texto</label>
+          <textarea class="form-control" id="texto" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="d-grid gap-2">
+        <button class="btn btn-outline-success">Guardar</button>
+        <button class="btn btn-outline-info">Limpiar</button>
+      </div>
+    </form>
+  </div>
+ 
+  <!-- librería JS de bootstrap -->
+  <script src="./dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
